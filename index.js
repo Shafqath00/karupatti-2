@@ -14,8 +14,7 @@ apps.use(bodyParser.urlencoded({ extended: true }));
 apps.use(express.static("public"));
 
 apps.get("/",(req,res)=>{
-    res.render("index.ejs")
-  
+    res.render("index.ejs");
 })
 apps.post("/submit",(req,res)=>{
     const {name,mail,number,location,texts}= req.body;
